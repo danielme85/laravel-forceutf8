@@ -1,0 +1,21 @@
+{
+    "name": "danielme85/laravel-forceutf8",
+    "description": "Simple Laravel 5 service class for neitanod's forceutf8. https://github.com/neitanod/forceutf8",
+    "type": "laravel-plugin",
+    "require": {
+        "php": ">=5.5.9",
+        "neitanod/forceutf8": "^2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Mellum",
+            "email": "mellum@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "danielme85\\ForceUTF8\\": "src"
+        }
+    }
+}
