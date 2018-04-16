@@ -17,5 +17,15 @@
         "psr-4": {
             "danielme85\\ForceUTF8\\": "src"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "danielme85\\ForceUTF8\\ForceUTF8ServiceProvider"
+            ],
+            "aliases": {
+                "Encoding": "danielme85\\ForceUTF8\\Encoding"
+            }
+        }
     }
 }

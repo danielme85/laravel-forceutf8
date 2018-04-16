@@ -1,7 +1,7 @@
 # laravel-forceutf8
 Simple Laravel 5 service class for neitanod's forceutf8: https://github.com/neitanod/forceutf8
 
-###Install
+### Install
 Add to composer.json
  ```
  "require": {
@@ -9,19 +9,23 @@ Add to composer.json
          ....
  }
  ```
+ 
+<b>If you use Laravel 5.5+ you could skip the next step as Composer/Laravel Auto-discovery has been enabled for this package.</b>
 
-####Laravel 5.x
+
+
+#### Laravel 5.x
  Add to your config/app.php under Service Providers
             
  ```
- //Service Providers
+ //Service Provider
  danielme85\ForceUTF8\ForceUTF8ServiceProvider::class,
- //Facades
- 'Currency'  => danielme85\ForceUTF8\Encoding::class,
+ //Facade
+ 'Encoding'  => danielme85\ForceUTF8\Encoding::class,
  
  ```
  
-####Lumen 5.x
+#### Lumen 5.x
  Add to your boostrap/app.php file
  ```
  $app->register(danielme85\ForceUTF8\ForceUTF8ServiceProvider::class);
@@ -32,7 +36,7 @@ Add to composer.json
  $app->withFacades();
  ```
  
-###Usage
+### Usage
  ```
  use danielme85\ForceUTF8\Encoding;
  ...
